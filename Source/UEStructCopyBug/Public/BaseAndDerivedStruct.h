@@ -4,7 +4,7 @@
 
 // --------------------------------------------------------------------------------------------------------------------
 
-USTRUCT(BlueprintType)
+USTRUCT(BlueprintType, meta=(NoImplicitConversion))
 struct FBaseStruct
 {
 	GENERATED_BODY()
@@ -14,7 +14,7 @@ public:
 	float Value = -1.0f;
 };
 
-USTRUCT(BlueprintType)
+USTRUCT(BlueprintType, meta=(NoImplicitConversion))
 struct FDerivedStruct : public FBaseStruct
 {
 	GENERATED_BODY()
